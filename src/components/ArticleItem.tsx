@@ -34,9 +34,9 @@ const ArticleItem: React.FC<ArticleItemProps> = ({ post }) => {
       <ArticleThumbnail src={post.thumbnail_url} alt={post.title} />
       <ArticleContent>
         <Header>
-          <caption>{formattedDate}</caption>
+          <span>{formattedDate}</span>
           <span className="dot" />
-          <caption>{formattedAuthorLastName}</caption>
+          <span>{formattedAuthorLastName}</span>
         </Header>
         
         <Title>{post.title}</Title>

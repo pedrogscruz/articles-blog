@@ -1,9 +1,47 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
   padding: 2rem 1rem;
+`;
+
+export const ContainerMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
+`;
+
+export const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .sort-by {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+  }
+`;
+
+export const HeaderMobile = styled.div`
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  overflow: auto;
+  .sort-by {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: .25rem;
+  }
+`;
+
+export const Content = styled.div`
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
 `;
 
 export const Title = styled.h2`
@@ -20,7 +58,6 @@ export const LoadingContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 `;
 
 export const Spinner = styled.div`
@@ -46,6 +83,11 @@ export const ErrorMessage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   color: #ef4444;
 `; 
+
+export const EmptyState = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

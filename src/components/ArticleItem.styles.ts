@@ -33,6 +33,9 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   gap: .5rem;
+  font-size: ${({ theme }) => theme.caption.fontSize};
+  line-height: ${({ theme }) => theme.caption.lineHeight};
+  font-weight: ${({ theme }) => theme.caption.fontWeight};
   & > span.dot {
     width: 4px;
     height: 4px;
@@ -62,7 +65,10 @@ export const CategoriesContainer = styled.div`
   margin-top: auto;
 `;
 
-export const CategoryTag = styled.caption`
+export const CategoryTag = styled.span`
+  font-size: ${({ theme }) => theme.caption.fontSize};
+  line-height: ${({ theme }) => theme.caption.lineHeight};
+  font-weight: ${({ theme }) => theme.caption.fontWeight};
   padding: 0.5rem 0.75rem;
   background-color: ${({ theme }) => theme.colors.neutrals.lightest};
   border-radius: 9999px;

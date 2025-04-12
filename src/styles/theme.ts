@@ -35,7 +35,7 @@ export const theme = {
   },
   body: {
     fontFamily: "'Open Sans'",
-    fontSize: '1rem',
+    fontSize: '0.875rem',
     lineHeight: '130%',
     fontWeight: 400,
   },
