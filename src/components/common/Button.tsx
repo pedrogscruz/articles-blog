@@ -13,6 +13,7 @@ export const Button:FC<ButtonProps> = ({ variant = 'primary', ...props }) => {
 const StyledButton = styled.button<{ variant: ButtonVariant }>`
   display: flex;
   align-items: center;
+  text-decoration: none;
   justify-content: center;
   gap: 0.5rem;
   font-size: 1rem;
