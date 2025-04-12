@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import ArticleItem from '../components/ArticleItem';
 import { Post } from '../types/article';
@@ -70,7 +70,11 @@ const Article: React.FC = () => {
 
   return (
     <Container>
-      <div style={{ flex: 1 }}><Button variant="secondary">Back</Button></div>
+      <div style={{ flex: 1 }}>
+        <Link to="/" style={{ display: 'inline-block', textDecoration: 'none' }}>
+          <Button variant="secondary">Back</Button>
+        </Link>
+      </div>
       <Content>
         <ArticleHeader>
           {isMobile ? <h2>{post.title}</h2> : <h1>{post.title}</h1>}
